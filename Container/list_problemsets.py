@@ -139,18 +139,195 @@
 
 #q15 let's rol a dice 50 times (using random) and print the frequency of each numbers on the dice. 
 #which number appeared most frequently?
-import random
-list=[]
-for i in range(50):
-    r=random.randint(1, 6)
-    list.append(r)
+# import random
+# list=[]
+# for i in range(50):
+#     r=random.randint(1, 6)
+#     list.append(r)
 
-freq=[0, 0, 0, 0, 0, 0]
-for i in range(50):
-    k=list[i]
-    freq[k-1]+=1
+# freq=[0, 0, 0, 0, 0, 0]
+# for i in range(50):
+#     k=list[i]
+#     freq[k-1]+=1
 
-for i in range(6):
-    print("{} appeared {} times".format(i, freq[i]))
+# for i in range(6):
+#     print("{} appeared {} times".format(i, freq[i]))
 
-print("the most frequently appeared number and its frequency were {}/{}: ".format(max(freq), freq.index(max) ) )
+# a=max(freq)
+# for i in range(len(freq)):
+#     if a==freq[i]:
+#         ind=i
+    
+# print("the most frequently appeared number and its frequency were {}/{}: ".format(i,a) )
+
+#16 remove a value from a list and print out the final list: [1,3,5,7,9]
+# myList=[1,2,3,4,5,6,7,8,9,10]
+
+# for i in range(2, 11, 2):
+#     myList.remove(i)
+
+# print(myList)
+
+
+#q17 flip the order of favorite_list and print it
+# favorite_list=['hotel california', 7, 'tiger', 'true']
+# print(reversed(favorite_list))
+
+
+##############. .................................... reverse/reversed
+# l=[3,2,4,6,1]
+# print(l)
+# l1=list(reversed(l))
+# #l#.reverse()
+# print(l)
+# print(l1)
+
+
+############## ................................... sort/sorted key lambda
+l=[9,4,7,3,2,1]
+# print(type(l))
+# # l.sort()
+# print(l)
+# l1=sorted(l)
+# print(l, l1)
+#########....................................... descending sort 
+# print(l)
+# l.sort(reverse=True)
+# print(l)
+
+
+########## .................................... using others as key
+# l=[[3,10],[1,50],[2,40]]
+# # l.sort()
+# l.sort(key=lambda x :[x[1]])
+# print(l)////////////////////////////////
+
+
+l=['orange', 'banana', 'grape', 'apple']
+l1=sorted(l, key=lambda x:x[-1])
+print(l1)
+#q18 list names=["lee", "park", "ha"] stores the names of lab members. 
+#is member "lee" present in the lab?
+# names=["lee", "park", "ha"]
+# if ("lee" in names):
+#     print("{} is currently working at the lab".format("lee"))
+# else:
+#     print("{} is currently not working at the lab".format("lee"))
+    
+#q19 Tom is trying to write a program that checks whether the number of list elements is 5.
+# write the code for Tom and conclude whether numlist=[5, 9, 301, 714] satisfies the criteria
+# numlist=[5, 9, 301, 714]
+# if (len(numlist)==5):
+#     print("this list has five elemenets")
+# else: 
+#     print("this list does not have five elements")
+
+
+#q20 itereate the int_num_a three times and form a new list int_num_c
+# int_num_a=[1,2,3]
+# int_num_c=int_num_a*3
+# print(int_num_c) 
+
+
+#q22 collect the surnames from the names in the lists. align them in ascending order.
+# mList=["HONG Gildong", "JANG Dong gun", "LEE Jong Suk", "SEO Tae ji"]
+# fList=["KANG Soo young", "MIN So jiin", "NAM Suji", "AHN young mi"]
+
+# list=[]
+# for ele in mList:
+#     list.append(ele.split()[0])
+
+# for ele in fList:
+#     list.append(ele.split()[0])
+
+# print(list)
+# print(sorted(list))
+
+
+#q23 you are given a list myList=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
+# split them into a group of 4 (3 groups with 3 elements and 1 group with 2 elements)
+# myList=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
+
+# list1=myList[:3]
+# list2=myList[3:6]
+# list3=myList[6:9]
+# list4=myList[9:11]
+
+# print(list1)
+# print(list2)
+# print(list3)
+# print(list4)
+
+#q24 append "zoo" element to the List and align them in alphabetical order
+# List=["blind", "apple", "coin"]
+# List.append("zoo")
+# print(sorted(List))
+
+#q25 from the list number=[2,4,5,6,8,10]
+# make a new list2 composed of smallest and largest number only
+# number=[2,4,5,6,8,10]
+# list2=[]
+# list2.append(min(number))
+# list2.append(max(number))
+# print(list2)
+
+#q26 find the minimum, maximum numbers and their index
+# List=[70, 100, 80, 60, 90, 30, 20, 50]
+# print("maximum: {} ({})".format(max(List), max(List).index))
+# print("maximum: {} ({})".format(max(List), max(List).index))
+
+# q27 make two lists, merge them and align the elements in descending order
+# final results should look as follows:
+# after merge: [['apple', 100], ['orange', 200], ['kiwi', 300], ['banana', 400], ['banana', , 500]]
+# after sorting: [['orange', 200], ['kiwi', 300], ['grape', 500], ['banana', 400], ['apple', 100]]
+
+# fruits=['apple', 'orange', 'kiwi', 'banana', 'grape']
+# price=[100, 200, 300, 400, 500]
+
+# list=[]
+# newlist=[]
+# for i in range(5):
+#     list=[]
+#     list.append(fruits[i])
+#     list.append(price[i])
+#     newlist.append(list)
+# print(newlist)
+
+# print(sorted(newlist, key=str, reverse=True))
+
+#q28 Teacher Alice has a list of vocabularies for her english vocabulary test. 
+#from the following three lists, Alice would like to make a test that
+#includes 'maintenance' with at leaast 5 vocabularies.
+# write a code that can verify the list eligible for the vocabulary test
+
+# list_ex1=["risk", "issue", "test", "maintenance", "maturity"]
+# list_ex2=["security", "plan", "design", "systematic", "safety"]
+# list_ex3=["mainttenance", "verifaction", "validation"]
+
+# if "maintenance" in list_ex1 and len(list_ex1)>4:
+#     print("list_ex1 is eligible")
+# if ("maintenance" in list_ex2 && len(list_ex2)>4):
+#     print("list_ex2 is eligible")
+# if ("maintenance" in lizst_ex3 && len(list_ex3)>4):
+#     print("list_ex3 is eligible")
+
+#q29 makea list of 4x5 and input of 3 starting from 0
+# list=[]
+# flist=[]
+# cnt=0
+# for i in range(20):
+#     list.append(3*i)
+#     cnt+=1
+#     if (cnt%5)==0:
+#         flist.append(list)
+#         list=[]
+
+# for row in flist:
+#     for ele in row:
+#         #print(f'{ele:<3}', end=' ')
+#         # print('{1:<3}{0:<3}'.format(ele,ele*2), end=' ')
+#         # print(f'{ele*2:<3}{ele:<3}', end=' ')
+#         #print(f'{ele:>3}', end=' ')
+#        #print(f'{ele:^3}', end=' ')
+#     print()
+
