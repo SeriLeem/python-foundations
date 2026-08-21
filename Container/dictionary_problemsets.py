@@ -36,9 +36,9 @@
 #4 four menus at the cafe are Americano, Cafe latte, Green tea, Mocha latte
 # each menu costs 2000, 2500, 3000, 4500, respectively.
 # make a list of these menus using a dictionary and check whether your favorite menu is included
-my_cafe=dict([('Americano', 2000), ('Cafe latte', 2500), ('Green tea', 3000), ('Mocha latte', 4500)])
-selection=input('select an item')
-if selection in my_cafe:
-    print(selection, 'is here!')
-else: 
-    print(selection, 'is not here!')
+# my_cafe=dict([('Americano', 2000), ('Cafe latte', 2500), ('Green tea', 3000), ('Mocha latte', 4500)])
+# selection=input('select an item')
+# if selection in my_cafe:
+#     print(selection, 'is here!')
+# else: 
+#     print(selection, 'is not here!')

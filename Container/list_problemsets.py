@@ -203,9 +203,9 @@ l=[9,4,7,3,2,1]
 # print(l)////////////////////////////////
 
 
-l=['orange', 'banana', 'grape', 'apple']
-l1=sorted(l, key=lambda x:x[-1])
-print(l1)
+# l=['orange', 'banana', 'grape', 'apple']
+# l1=sorted(l, key=lambda x:x[-1])
+# print(l1)
 #q18 list names=["lee", "park", "ha"] stores the names of lab members. 
 #is member "lee" present in the lab?
 # names=["lee", "park", "ha"]
