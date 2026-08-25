@@ -166,7 +166,7 @@
 #convert all uppercase letters to lowercases. delete ',' and '.'
 #print repetitive words only once and print their frequencies.
 
-# s='We propose to start by making it possible to teachign programming in Python, an existing scripting language, and to focus on creating creating a new development environment and teaching materials for it.'
+# s='We propose to start by making it possible to teaching programming in Python, an existing scripting language, and to focus on creating creating a new development environment and teaching materials for it.'
 # import re
 # s2=re.sub('[,.]','',s.lower())
 # print(s2)
