@@ -152,4 +152,17 @@
 #use sum() and len() to calculate the average.
 # midterm={'prodo':97, 'sally':88, 'neo':70, 'brown':99, 'mini':70}
 # for i in range(len(midterm)):
+
+#q14 you are given a string that contains 'a', 'b', 'c' and 'e'
+# convert a, b, c, e to w, x, y, z, respectively.
+# also, convert w, x, y, z to a, b, c, e, respectively.
+
+# cv={'a':'x', 'b':'y', 'c':'z', 'e':'z'}
+# str='cabsz'
+# for i in range(len(str)):
+#     if str[i] in cv:
+#         str.replace(str[i], cv)
+        
+#q15 you are given a dictionary as follows: n={'kr':'south korea', 'us':'united states', 'jp }
+
     
