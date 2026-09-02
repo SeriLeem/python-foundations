@@ -258,20 +258,20 @@
 # print(a1)
 # print(a2)
 
-#ex19 use numpy.loadtxt to load data from a textfile
-import numpy as np
-x=np.array([1,2,3,4])
-y=np.array([5,6,7,8])
-z=np.array([9,10,11,12])
+#ex20 use numpy.loadtxt to load data from a textfile
+# import numpy as np
+# x=np.array([1,2,3,4])
+# y=np.array([5,6,7,8])
+# z=np.array([9,10,11,12])
 
-np.savetxt('array_x.csv', x, delimiter=',')
-np.savetxt('array_xy.csv', (x,y))
-np.savetxt('array_z.csv', z, fmt='%1.4e')
+# np.savetxt('array_x.csv', x, delimiter=',')
+# np.savetxt('array_xy.csv', (x,y))
+# np.savetxt('array_z.csv', z, fmt='%1.4e')
 
-load_x=np.loadtxt('array_x.csv')
-load_xy=np.loadtxt('array_xy.csv')
-load_z=np.loadtxt('array_z.csv')
-print(load_x)
-print(load_xy)
-print(load_z) #Your last print() does not show scientific notation because np.savetxt only formats the text inside the saved file, whereas np.loadtxt reads those values back into memory as standard floating-point numbers.
+# load_x=np.loadtxt('array_x.csv')
+# load_xy=np.loadtxt('array_xy.csv')
+# load_z=np.loadtxt('array_z.csv')
+# print(load_x)
+# print(load_xy)
+# print(load_z) #Your last print() does not show scientific notation because np.savetxt only formats the text inside the saved file, whereas np.loadtxt reads those values back into memory as standard floating-point numbers.
 
